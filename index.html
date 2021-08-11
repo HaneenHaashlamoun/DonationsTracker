@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Donations Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h1>Donations Tracker</h1>
+    </header>
+    <main>
+        <div>
+            <form id="mainForm" action="">
+                <fieldset>
+                    <label for="userName">Donator Name</label>
+                    <input name="userName" type="text" required>
+
+                    <label for="donation">Donation Amount</label>
+                    <select name="donation" id="donationList">
+                        <option value="100">100</option>
+                        <option value="300">300</option>
+                        <option value="500">500</option>
+                    </select>
+                    <input type="submit" name="submit" id="submitBtn" value="Submit Query">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <table id="donationTable">
+                <th>Donator Name</th>
+                <th>Donation Amount</th>
+                <th>Age</th>
+            </table>
+            <button id="clearData">Clear Items</button>
+        </div>
+    </main>
+    <footer>
+        <script src="js/app.js"></script>
+    </footer>
+</body>
+
+</html>
